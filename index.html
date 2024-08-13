@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yuri</title>
+    <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/zhuYeCss.css">
+    <script src="js/vue.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id='guanXi' class='lanMu'>
+    <div id="zhuRen">
+        <a :href="lianJie">
+            <div>
+                <div class="touXiang">
+                    <img :src="touXiang">
+                </div>
+                <div class="name">
+                    <h1>- {{name}} -</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="keRen">
+        <div class="keRen" v-for="x in pengYou">
+            <a :href="x.lianJie">
+                <div class="touXiang">
+                    <img :src="x.touXiang">
+                </div>
+            </a>
+            <div class="name">
+                <h1>- {{x.name}} -</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="jingQingQiDai" class="lanMu">
+    <div class="name">
+        <h1>敬请期待</h1>
+    </div>
+</div>
+
+<script src="js/zhuYeJs.js" type="text/javascript"></script>
+</body>
+</html>
+
+
