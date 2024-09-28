@@ -114,7 +114,10 @@ const vm = new Vue({
             this.searchSelected = event.target.id;
         },
         searchButton() {
-            window.open(this.searchURL, '_self');
+            if (this.inputText !== '') {
+                console.log(this.inputText);
+                window.open(this.searchURL, '_self');
+            }
         },
     },
     computed: {
