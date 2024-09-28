@@ -31,6 +31,9 @@
     color: aliceblue;
     text-align: center; /* 文字水平居中 */
 
+    transition: background-color 1s ease;
+    outline: none;
+
 
 
 }

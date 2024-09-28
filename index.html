@@ -24,80 +24,79 @@
         <input id="searchInput" type="text" v-model="inputText" placeholder="A R K N I G H T S">
         <button id="searchButton" @click="searchButton()">SEARCH</button>
     </div>
-<!--    <div id="searchList" v-if="ifSearchList">-->
-        <table id="searchListTable">
-            <tr>
-                <td>
-                    <button :id="searchList[0].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[0].name">
-                    </button>
-                </td>
-                <td>
-                    <button :id="searchList[1].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[1 ].name">
-                    </button>
-                </td>
-                <td>
-                    <button :id="searchList[2].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[2].name">
-                    </button>
-                </td>
-                <td>
-                    <button :id="searchList[3].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[3].name">
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button :id="searchList[4].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[4].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[5].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[5].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[6].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[6].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[7].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[7].name"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button :id="searchList[8].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[8].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[9].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[9].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[10].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[10].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[11].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[11].name"></button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button :id="searchList[12].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[12].name"></button>
-                </td>
-                <td>
-                    <button :id="searchList[13].id" class="searchListButton" @click="searchListButton($event)"
-                            v-text="searchList[13].name"></button>
-                </td>
-                <td>
-                    <button class="searchListButton" onclick="YUANSHEN()"> 敬请期待 </button>
-                </td>
-            </tr>
-        </table>
+    <table id="searchListTable">
+        <tr>
+            <td>
+                <button :id="searchList[0].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[0].name">
+                </button>
+            </td>
+            <td>
+                <button :id="searchList[1].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[1 ].name">
+                </button>
+            </td>
+            <td>
+                <button :id="searchList[2].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[2].name">
+                </button>
+            </td>
+            <td>
+                <button :id="searchList[3].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[3].name">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button :id="searchList[4].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[4].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[5].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[5].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[6].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[6].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[7].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[7].name"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button :id="searchList[8].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[8].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[9].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[9].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[10].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[10].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[11].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[11].name"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button :id="searchList[12].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[12].name"></button>
+            </td>
+            <td>
+                <button :id="searchList[13].id" class="searchListButton" @click="searchListButton($event)"
+                        v-text="searchList[13].name"></button>
+            </td>
+            <td>
+                <button class="searchListButton" onclick="YUANSHEN()"> 敬请期待</button>
+            </td>
+        </tr>
+    </table>
 
     <div class="test">
 
