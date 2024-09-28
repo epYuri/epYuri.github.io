@@ -22,7 +22,7 @@ body {
     flex-direction: column; /* 子元素竖着排列 */
     justify-content: center; /* 子元素在容器中垂直居中 */
     align-items: center; /* 子元素在容器中水平居中 */
-    height: 300px; /* 容器的高度 */
+    /*height: 300px; !* 容器的高度 *!*/
 
 }
 

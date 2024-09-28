@@ -12,6 +12,17 @@
     padding :0;
 
     table-layout: fixed;
+
+    transition: all 1s ease; /* 1秒内平滑过渡 */
+    overflow: hidden; /* 防止内容溢出 */
+    opacity: 0; /* 默认透明 */
+
+    border: 0;
+}
+
+
+#searchListTable:not(.hidden){
+    opacity: 1;
 }
 
 
@@ -33,7 +44,5 @@
 
     transition: background-color 1s ease;
     outline: none;
-
-
 
 }

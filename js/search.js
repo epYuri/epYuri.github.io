@@ -21,7 +21,6 @@ const vm = new Vue({
     data() {
         return {
             searchSelected: 0,
-            ifSearchList: false,
             idValue: '',
             searchList: [
                 {
@@ -113,14 +112,9 @@ const vm = new Vue({
         };
     },
     methods: {
-        searchSelectButton() {
-            this.ifSearchList = !this.ifSearchList;
-        },
+
         searchListButton(event) {
             this.searchSelected = event.target.id;
-        },
-        searchListButtonText(event) {
-            return this.searchList[event.target.id].name;
         },
         searchButton() {
             window.open(this.searchURL, '_self');
@@ -137,4 +131,13 @@ const vm = new Vue({
 
 function YUANSHEN() {
     window.open('https://ys.mihoyo.com', '_blank');
+}
+
+function toggleBlock() {
+    var block = document.getElementById('searchListTable');
+    if (block.classList.contains('hidden')) {
+        block.classList.remove('hidden');
+    } else {
+        block.classList.add('hidden');
+    }
 }
