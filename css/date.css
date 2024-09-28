@@ -1,0 +1,17 @@
+#clock * {
+    margin: 3px;
+    padding: 0;
+    border: 0;
+}
+
+#time {
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 0 0 5px #000; /* 添加两层阴影以增强发光效果 */
+}
+
+#dateInfo {
+    font-size: 18px;
+    color: aliceblue;
+    text-shadow: 0 0 5px #000; /* 添加两层阴影以增强发光效果 */
+}

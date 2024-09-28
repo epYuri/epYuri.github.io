@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/date.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+<div id="root">
+
+    <div class="clock" id="clock">
+        <div class="time" id="time"></div>
+        <br />
+        <div id="dateInfo"></div>
+    </div>
+    <div id="search">
+        <button id="searchSelectButton">
+            「 {{searchList[searchSelected].name}} 」
+        </button>
+        <input id="searchInput" type="text" v-model="inputText" placeholder="A R K N I G H T S">
+        <button id="searchButton" @click="search">SEARCH</button>
+    </div>
+    <div class="test">
+
+    </div>
+</div>
+</body>
+<script src="js/date.js"></script>
+<script src="js/search.js"></script>
+<script>
+
+</script>
+</html>
