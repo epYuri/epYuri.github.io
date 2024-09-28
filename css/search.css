@@ -11,28 +11,36 @@
 }
 
 #search > * {
-    background: none; /* 移除背景 */
+
     border: none; /* 移除边框 */
     outline: none; /* 移除聚焦时的轮廓线 */
 }
 
-#searchSelectButton {
+.searchButton {
+    border: none; /* 无边框 */
+
     width: 80px; /* 设置按钮的宽度 */
-    height: 25px; /* 设置按钮的高度 */
+    height: 35px; /* 设置按钮的高度 */
     padding: 0; /* 去除内边距，确保文字居中 */
 
     font-size: 10px; /* 设置字体大小 */
     color: aliceblue;
     text-align: center; /* 文字水平居中 */
 
-    margin: auto 0;
-
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 1s ease;
     outline: none;
+}
 
+#searchSelectButton {
+    border-top-left-radius: 25px; /* 左上角圆角半径 */
+    border-bottom-left-radius: 25px; /* 左下角圆角半径 */
 }
 
 #searchInput {
+    background: none; /* 移除背景 */
+
     width: 700px; /* 设置搜索框的宽度 */
     height: 25px; /* 设置搜索框的高度 */
     padding: 5px;
@@ -44,17 +52,6 @@
 }
 
 #searchButton {
-    width: 80px; /* 设置按钮的宽度 */
-    height: 25px; /* 设置按钮的高度 */
-    padding: 0; /* 去除内边距，确保文字居中 */
-
-    font-size: 10px; /* 设置字体大小 */
-    color: aliceblue;
-    text-align: center; /* 文字水平居中 */
-
-    margin: auto 0;
-
-    transition: background-color 1s ease;
-    outline: none;
+    border-top-right-radius: 25px; /* 左上角圆角半径 */
+    border-bottom-right-radius: 25px; /* 左下角圆角半径 */
 }
-

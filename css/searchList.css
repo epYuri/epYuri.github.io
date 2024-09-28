@@ -5,7 +5,7 @@
 
 #searchListTable {
     width: 870px;
-    height: 200px;
+    height: 0;
     background-color: rgba(0, 0, 0, 0.65); /* 黑色背景，20%不透明度 */
     border-radius: 25px; /* 圆角边框 */
     border: none; /* 无边框 */
@@ -13,7 +13,7 @@
 
     table-layout: fixed;
 
-    transition: all 1s ease; /* 1秒内平滑过渡 */
+    transition: all 0.5s ease; /* 1秒内平滑过渡 */
     overflow: hidden; /* 防止内容溢出 */
     opacity: 0; /* 默认透明 */
 
@@ -23,6 +23,7 @@
 
 #searchListTable:not(.hidden){
     opacity: 1;
+    height: 200px;
 }
 
 
@@ -33,7 +34,7 @@
     margin: auto 0;
     /* 去掉内边距 */
     padding: 0;
-    border-radius: 10px; /* 圆角边框 */
+    border-radius: 25px; /* 圆角边框 */
     border: none;
     /* 设置背景颜色 */
     background-color: rgba(75, 75, 75, 0.53);

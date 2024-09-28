@@ -18,11 +18,11 @@
         <div id="dateInfo"></div>
     </div>
     <div id="search">
-        <button id="searchSelectButton" onclick="toggleBlock()">
+        <button id="searchSelectButton" class="searchButton" onclick="toggleBlock()">
             「 {{searchList[searchSelected].name}} 」
         </button>
         <input id="searchInput" type="text" v-model="inputText" placeholder="A R K N I G H T S">
-        <button id="searchButton" @click="searchButton()">SEARCH</button>
+        <button id="searchButton" class="searchButton" @click="searchButton()">SEARCH</button>
     </div>
     <table id="searchListTable" class="hidden">
         <tr>
