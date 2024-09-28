@@ -1,0 +1,34 @@
+#searchList {
+    color: aliceblue;
+}
+
+#searchListTable {
+    width: 860px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.65); /* 黑色背景，20%不透明度 */
+    border-radius: 25px; /* 圆角边框 */
+    border: none; /* 无边框 */
+
+    table-layout: fixed;
+}
+
+
+.searchListButton {
+    width: 90%; /* 设置按钮的宽度 */
+    height: 70%; /* 设置按钮的高度 */
+
+    margin: auto 0;
+    /* 去掉内边距 */
+    padding: 0;
+    border-radius: 10px; /* 圆角边框 */
+    border: none;
+    /* 设置背景颜色 */
+    background-color: rgba(75, 75, 75, 0.53);
+
+    font-size: 10px; /* 设置字体大小 */
+    color: aliceblue;
+    text-align: center; /* 文字水平居中 */
+
+
+
+}
