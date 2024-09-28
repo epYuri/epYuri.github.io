@@ -1,13 +1,15 @@
 #searchList {
     color: aliceblue;
+    padding: 0;
 }
 
 #searchListTable {
-    width: 860px;
+    width: 870px;
     height: 200px;
     background-color: rgba(0, 0, 0, 0.65); /* 黑色背景，20%不透明度 */
     border-radius: 25px; /* 圆角边框 */
     border: none; /* 无边框 */
+    padding :0;
 
     table-layout: fixed;
 }
@@ -25,7 +27,7 @@
     /* 设置背景颜色 */
     background-color: rgba(75, 75, 75, 0.53);
 
-    font-size: 10px; /* 设置字体大小 */
+    font-size: 13px; /* 设置字体大小 */
     color: aliceblue;
     text-align: center; /* 文字水平居中 */
 
