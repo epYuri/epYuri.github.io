@@ -13,7 +13,7 @@
 
     table-layout: fixed;
 
-    transition: all 1.5s ease; /* 1秒内平滑过渡 */
+    transition: all 1s ease; /* 1秒内平滑过渡 */
     overflow: hidden; /* 防止内容溢出 */
     opacity: 0; /* 默认透明 */
 
