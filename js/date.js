@@ -17,7 +17,6 @@ function updateClock() {
     // 1000毫秒（1秒）之后再次调用updateClock函数
     // now.getTime() % 1000用于计算当前时间距离下一秒的毫秒数，从而确保setTimeout的延迟时间刚好在下一秒开始时执行
     setTimeout(updateClock, 1000 - now.getTime() % 1000);
-
     // 获取年份
     const year = now.getFullYear();
     // 获取月份，月份是从0开始的，所以需要加1
@@ -30,7 +29,6 @@ function updateClock() {
     const daysOfWeek = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
     const week = daysOfWeek[dayOfWeek];
     document.getElementById('dateInfo').innerHTML = `${month} 月 ${day} 日 ${week}`;
-
 }
 
 // 调用updateClock函数，初始化时钟显示

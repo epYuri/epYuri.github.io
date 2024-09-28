@@ -2,8 +2,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // 获取按钮元素
     var button = document.getElementById('searchButton');
-
-
     // 给文档添加键盘按下事件监听器
     document.addEventListener('keydown', function (event) {
         // 检查按下的键是否是回车键
@@ -112,7 +110,6 @@ const vm = new Vue({
         };
     },
     methods: {
-
         searchListButton(event) {
             this.searchSelected = event.target.id;
         },

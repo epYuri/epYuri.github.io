@@ -11,7 +11,6 @@ body {
     background-position: center; /* 背景图片居中显示 */
     background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
 
-
     display: flex;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
@@ -22,8 +21,6 @@ body {
     flex-direction: column; /* 子元素竖着排列 */
     justify-content: center; /* 子元素在容器中垂直居中 */
     align-items: center; /* 子元素在容器中水平居中 */
-    /*height: 300px; !* 容器的高度 *!*/
-
 }
 
 #root > * {
