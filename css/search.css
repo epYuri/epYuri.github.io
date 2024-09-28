@@ -17,7 +17,7 @@
 }
 
 #searchSelectButton {
-    width: 75px; /* 设置按钮的宽度 */
+    width: 80px; /* 设置按钮的宽度 */
     height: 25px; /* 设置按钮的高度 */
     padding: 0; /* 去除内边距，确保文字居中 */
 
@@ -40,7 +40,7 @@
 }
 
 #searchButton {
-    width: 75px; /* 设置按钮的宽度 */
+    width: 80px; /* 设置按钮的宽度 */
     height: 25px; /* 设置按钮的高度 */
     padding: 0; /* 去除内边距，确保文字居中 */
 

@@ -20,7 +20,9 @@ const vm = new Vue({
     el: '#root',
     data() {
         return {
-            inputText: '',
+            searchSelected: 0,
+            ifSearchList: false,
+            idValue: '',
             searchList: [
                 {
                     name: 'Bing',
@@ -107,11 +109,20 @@ const vm = new Vue({
                     url: 'https://www.so.com/s?q='
                 },
             ],
-            searchSelected: 0,
+            inputText: '',
         };
     },
     methods: {
-        search() {
+        searchSelectButton() {
+            this.ifSearchList = !this.ifSearchList;
+        },
+        searchListButton(event) {
+            this.searchSelected = event.target.id;
+        },
+        searchListButtonText(event) {
+            return this.searchList[event.target.id].name;
+        },
+        searchButton() {
             window.open(this.searchURL, '_self');
         },
     },
@@ -123,3 +134,7 @@ const vm = new Vue({
         }
     }
 });
+
+function YUANSHEN() {
+    window.open('https://ys.mihoyo.com', '_blank');
+}
