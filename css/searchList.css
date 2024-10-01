@@ -5,31 +5,24 @@
 
 #searchListTable {
     width: 870px;
-    height: 0;
     background-color: rgba(0, 0, 0, 0.65); /* 黑色背景，20%不透明度 */
     border-radius: 25px; /* 圆角边框 */
     border: none; /* 无边框 */
-    padding :0;
-
+    padding: 0;
     table-layout: fixed;
+    overflow: hidden; /* 隐藏超出元素高度的内容 */
 
-    transition: all 1s ease; /* 1秒内平滑过渡 */
-    overflow: hidden; /* 防止内容溢出 */
-    opacity: 0; /* 默认透明 */
-
-    border: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+    transition: opacity 0.5s ease, height 0.5s ease, font-size 0.5s ease; /* 定义过渡效果 */
 }
 
-
-#searchListTable:not(.hidden){
-    opacity: 1;
-    height: 200px;
-}
 
 
 .searchListButton {
     width: 90%; /* 设置按钮的宽度 */
-    height: 70%; /* 设置按钮的高度 */
+    height: 70%; /* 设置按钮的高度 *//
 
     margin: auto 0;
     /* 去掉内边距 */
@@ -39,10 +32,11 @@
     /* 设置背景颜色 */
     background-color: rgba(75, 75, 75, 0.53);
 
-    font-size: 10px; /* 设置字体大小 */
     color: aliceblue;
     text-align: center; /* 文字水平居中 */
 
     transition: background-color 1s ease;
     outline: none;
 }
+
+

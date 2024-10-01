@@ -18,7 +18,18 @@ const vm = new Vue({
     el: '#root',
     data() {
         return {
+            vueCss: {
+                searchListTable: {
+                    "height": '0',
+                    "opacity": '0',
+                    searchListTableButton: {
+                        "height": "0",
+                        "fontSize": "0",
+                    }
+                },
+            },
             searchSelected: 0,
+            searchListTableIf: false,
             idValue: '',
             searchList: [
                 {
@@ -110,6 +121,29 @@ const vm = new Vue({
         };
     },
     methods: {
+        searchListIf() {
+            if (this.vueCss.searchListTable.height === '0') {
+                this.vueCss.searchListTable.height = '200px';
+            } else {
+                this.vueCss.searchListTable.height = '0';
+            }
+            if (this.vueCss.searchListTable.opacity === '0') {
+                this.vueCss.searchListTable.opacity = '1';
+            } else {
+                this.vueCss.searchListTable.opacity = '0';
+            }
+            if (this.vueCss.searchListTable.searchListTableButton.height === '0') {
+                this.vueCss.searchListTable.searchListTableButton.height = '70%';
+            } else {
+                this.vueCss.searchListTable.searchListTableButton.height = '0';
+            }
+            if (this.vueCss.searchListTable.searchListTableButton.fontSize === '0') {
+                this.vueCss.searchListTable.searchListTableButton.fontSize = '10px';
+            } else {
+                this.vueCss.searchListTable.searchListTableButton.fontSize = '0';
+            }
+
+        },
         searchListButton(event) {
             this.searchSelected = event.target.id;
         },
@@ -131,13 +165,4 @@ const vm = new Vue({
 
 function YUANSHEN() {
     window.open('https://ys.mihoyo.com', '_blank');
-}
-
-function toggleBlock() {
-    var block = document.getElementById('searchListTable');
-    if (block.classList.contains('hidden')) {
-        block.classList.remove('hidden');
-    } else {
-        block.classList.add('hidden');
-    }
 }

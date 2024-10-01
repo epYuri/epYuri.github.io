@@ -25,7 +25,6 @@ body {
 
 #root > * {
     text-align: center; /* 子元素内部文本居中 */
-    padding: 10px; /* 子元素的内边距 */
 }
 
 .test {

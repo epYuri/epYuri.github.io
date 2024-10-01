@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
+
+
     <script src="js/vue.js"></script>
+
+
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/date.css">
-    <link rel="stylesheet" href="css/searchList.css">
     <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/searchList.css">
+
+
 </head>
 <body>
 <div id="root">
@@ -17,82 +23,98 @@
         <div id="dateInfo"></div>
     </div>
     <div id="search">
-        <button id="searchSelectButton" class="searchButton" onclick="toggleBlock()">
+        <button id="searchSelectButton" class="searchButton" @click="searchListIf()">
             「 {{searchList[searchSelected].name}} 」
         </button>
         <input id="searchInput" type="text" v-model="inputText" placeholder="A R K N I G H T S">
         <button id="searchButton" class="searchButton" @click="searchButton()">SEARCH</button>
     </div>
-    <table id="searchListTable" class="hidden">
+    <table id="searchListTable" class="searchListTable" :style="vueCss.searchListTable">
         <tr>
             <td>
-                <button :id="searchList[0].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[0].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[0].name">
                 </button>
             </td>
             <td>
-                <button :id="searchList[1].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[1].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[1].name">
                 </button>
             </td>
             <td>
-                <button :id="searchList[2].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[2].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[2].name">
                 </button>
             </td>
             <td>
-                <button :id="searchList[3].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[3].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[3].name">
                 </button>
             </td>
         </tr>
         <tr>
             <td>
-                <button :id="searchList[4].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[4].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[4].name"></button>
             </td>
             <td>
-                <button :id="searchList[5].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[5].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[5].name"></button>
             </td>
             <td>
-                <button :id="searchList[6].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[6].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[6].name"></button>
             </td>
             <td>
-                <button :id="searchList[7].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[7].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[7].name"></button>
             </td>
         </tr>
         <tr>
             <td>
-                <button :id="searchList[8].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[8].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[8].name"></button>
             </td>
             <td>
-                <button :id="searchList[9].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[9].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[9].name"></button>
             </td>
             <td>
-                <button :id="searchList[10].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[10].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[10].name"></button>
             </td>
             <td>
-                <button :id="searchList[11].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[11].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[11].name"></button>
             </td>
         </tr>
         <tr>
             <td>
-                <button :id="searchList[12].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[12].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[12].name"></button>
             </td>
             <td>
-                <button :id="searchList[13].id" class="searchListButton" @click="searchListButton($event)"
+                <button :id="searchList[13].id" class="searchListButton"
+                        :style="vueCss.searchListTable.searchListTableButton" @click="searchListButton($event)"
                         v-text="searchList[13].name"></button>
             </td>
             <td>
-                <button class="searchListButton" onclick="YUANSHEN()"> 敬请期待</button>
+                <button class="searchListButton" :style="vueCss.searchListTable.searchListTableButton"
+                        onclick="YUANSHEN()"> 敬请期待
+                </button>
             </td>
         </tr>
     </table>
