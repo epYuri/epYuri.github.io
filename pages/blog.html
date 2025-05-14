@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
     <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
     <style>
+        h1,
         h2 {
             color: rgb(20, 143, 131);
         }
@@ -28,6 +29,18 @@
 
         .navigation-wrapper {
             margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .navigation {
+            display: inline-block;
+        }
+
+        .navigation ul {
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            list-style: none;
         }
 
         .blog-post {
@@ -44,6 +57,26 @@
         <div class="panel-main">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content" style="overflow-y: auto; max-height: 100vh;">
+                    <div class="ih-item circle effect right_to_left" style="margin-top: 20px;">
+                        <a href="#" title="" class="blog-button">
+                            <div class="img">
+                                <img src="../assets/img/logo4.jpg" alt="img" class="js-avatar iUp profilepic">
+                            </div>
+                            <div class="info iUp">
+                                <div class="info-back">
+                                    <h2> Be Brave </h2>
+                                    <p> 2025 · 坚持 </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <a href="#" title="Dmego Resume">Yuri</a>
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">Code Create Life</p>
+                    <hr class="panel-cover__divider iUp" />
+                    <h1 class="panel-cover__description iUp"> -- 个人博客 -- </h1>
+
                     <div class="blog-content iUp">
                         <section class="blog-section">
                             <h2> 最新文章 </h2>
@@ -59,6 +92,26 @@
                             </div> -->
                         </section>
                     </div>
+
+                    <nav class="navigation-wrapper">
+                        <div class="navigation">
+                            <ul>
+                                <li class="navigation__item">
+                                    <a href="../index.html" class="home-button">首页</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="blog.html" class="blog-button">博客</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="resume.html" class="resume-button">简历</a>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <a href="#" class="contact-button">关于</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
