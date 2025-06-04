@@ -1,0 +1,27 @@
+/* 商品详情页样式 */
+.product-main-image {
+    text-align: center;
+    margin: 20px 0;
+}
+.product-main-image img {
+    max-width: 50%;
+    height: auto;
+}
+.product-info {
+    padding: 0 20px;
+}
+.product-price {
+    font-size: 24px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.product-description, .product-specs {
+    margin: 20px 0;
+}
+.back-button {
+    display: inline-block;
+    margin: 15px;
+    text-decoration: none;
+    color: #333;
+}
