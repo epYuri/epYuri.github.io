@@ -1,0 +1,32 @@
+/* 游戏容器（定位基准） */
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 洗衣机通用样式 */
+.washer {
+    position: absolute;
+    width: 300px; /* 根据实际图片尺寸调整 */
+    height: 200px;
+    background-image: url("../img/xiYiJi02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 上边的洗衣机 */
+.washer.top {
+    top: 20%; /* 顶部位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* 层级较低 */
+}
+
+/* 下边的洗衣机（覆盖在上边之上） */
+.washer.bottom {
+    top: 50%; /* 底部位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* 层级更高 */
+}

@@ -1,0 +1,36 @@
+.sprite {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    z-index: 4;
+    left: 0;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.dhk {
+    position: fixed;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    opacity: 0;
+}
+
+#pi01 {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    opacity: 0;
+}
+
+#pi02 {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    opacity: 0;
+}

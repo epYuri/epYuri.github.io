@@ -1,0 +1,59 @@
+/* 固定页面容器尺寸 */
+html,
+body {
+    width: 640px;
+    height: 1030px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* 防止滚动条 */
+}
+
+body {
+    background-image: url("../img/fengMian01.png");
+}
+
+.start-game-btn {
+    position: absolute;
+    /* 绝对定位 */
+    left: 50%;
+    /* 水平居中 */
+    top: 800px;
+    /* 垂直靠下（页面总高1030px） */
+    transform: translateX(-50%);
+    /* 修正水平居中 */
+    width: 200px;
+    height: 50px;
+    background: #000;
+    /* 黑色背景 */
+    color: #fff;
+    /* 白色文字 */
+    border: none;
+    border-radius: 25px;
+    /* 左右圆角（高度50px时半径25px为正圆） */
+    font-size: 20px;
+    cursor: pointer;
+    transition: filter 0.3s;
+    /* 清晰度过渡动画 */
+    z-index: 10;
+}
+
+.bg-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    transition: opacity 2s;
+}
+
+.bg-layer.current {
+    background-image: url("../img/fengMian01.png");
+    /* 初始第一张图 */
+    opacity: 1;
+}
+
+.bg-layer.next {
+    opacity: 0;
+    /* 初始透明 */
+}

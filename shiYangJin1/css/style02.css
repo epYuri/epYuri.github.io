@@ -1,0 +1,45 @@
+/* 洗衣机容器 */
+.washers-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 单个洗衣机 */
+.washer {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* 保持原始尺寸 */
+    width: 640px;
+    /* 根据实际图片宽度调整 */
+    height: 446px;
+    animation: fadeIn 1s ease-in-out forwards;
+} 
+
+/* 上边洗衣机 */
+.washer.top {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 水平居中关键代码 */
+    z-index: 1;
+}
+
+/* 下边洗衣机（覆盖在上层） */
+.washer.bottom {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 水平居中关键代码 */
+    z-index: 2;
+}
