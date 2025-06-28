@@ -11,6 +11,8 @@ body {
 
 body {
     background-image: url("../img/fengMian01.png");
+    background-size: cover;
+    /* 背景图铺满 */
 }
 
 .start-game-btn {
@@ -18,7 +20,7 @@ body {
     /* 绝对定位 */
     left: 50%;
     /* 水平居中 */
-    top: 800px;
+    top: 80%;
     /* 垂直靠下（页面总高1030px） */
     transform: translateX(-50%);
     /* 修正水平居中 */
