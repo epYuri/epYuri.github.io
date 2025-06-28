@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,50 @@
     <meta name="screen-dpi" content="300"> <!-- 声明屏幕DPI -->
     <title>十样锦 - LOSE</title>
     <style>
+        html,
         body {
-            background-image: url("../img/YOU\ LOSE.png");
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: black;
+            width: 100vw;
+            height: 100vh;
         }
-    </style>    
+
+        .container {
+            width: 640px;
+            height: 1030px;
+            transform-origin: top left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-image: url('../img/YOU\ LOSE.png');
+            background-size: cover;
+            /* 背景图铺满容器 */
+            background-position: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- <img src="../img/YOU\ LOSE.png" alt=""> -->
+    </div>
 </body>
+<script>
+    function scaleToFit() {
+        const designWidth = 640;
+        const designHeight = 1030;
+        const scaleX = window.innerWidth / designWidth;
+        const scaleY = window.innerHeight / designHeight;
+        const scale = Math.min(scaleX, scaleY);
+
+        const container = document.querySelector('.container');
+        container.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    }
+
+    window.addEventListener('resize', scaleToFit);
+    window.addEventListener('load', scaleToFit);
+</script>
+
 </html>
