@@ -11,18 +11,44 @@
     <link rel="stylesheet" href="css/style03.css">
     <link rel="stylesheet" href="css/style04.css">
     <title>十样锦 - test</title>
-    <style></style>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .containera {
+            width: 640px;
+            height: 1030px;
+            transform-origin: top left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-image: url('img/fengMian01.png');
+            background-size: cover;
+            /* 背景图铺满容器 */
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="bg-layer current"></div>
-    <div class="bg-layer next"></div>
-    <button id="start-game-btn" class="start-game-btn">开始游戏</button>
-    <div class="game-container">
-        <div class="washer top"></div>
-        <div class="washer bottom"></div>
+    <div class="containera">
+        <div class="bg-layer current"></div>
+        <div class="bg-layer next"></div>
+        <button id="start-game-btn" class="start-game-btn">开始游戏</button>
+        <div class="game-container" style="z-index: 1;">
+            <div class="washer top"></div>
+            <div class="washer bottom"></div>
+        </div>
+
     </div>
-    <img src="img/e/renWu01.png" id="player" class="sprite" />
+    <img src="img/e/renWu01.png" style="z-index: 9;" id="player" class="sprite" />
     <img src="img/e/duiHuaKuang02.png" id="dhk" class="dhk" />
     <img src="img/e/p/i1.png" id="pi01" class="pi" />
     <img src="img/e/p/i2.png" id="pi02" class="pi" />
@@ -32,5 +58,19 @@
 <script src="js/script02.js"></script>
 <script src="js/script03.js"></script>
 <script src="js/script04.js"></script>
+<script>
+    function scaleToFit() {
+        const designWidth = 640;
+        const designHeight = 1030;
+        const scaleX = window.innerWidth / designWidth;
+        const scaleY = window.innerHeight / designHeight;
+        const scale = Math.min(scaleX, scaleY);
+
+        const container = document.querySelector('.containera');
+        container.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    }
+    window.addEventListener('resize', scaleToFit);
+    window.addEventListener('load', scaleToFit);
+</script>
 
 </html>
